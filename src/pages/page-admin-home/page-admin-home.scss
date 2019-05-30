@@ -1,0 +1,29 @@
+$cor1: rgb(179, 179, 179);
+$cor2:grey;
+$cor3:#00cc99;
+$cor4:#d8dce0;
+
+page-page-admin-home {
+
+}
+.body-default{
+    background: linear-gradient(to bottom, #cdd8e4,$cor4);
+}
+h4{
+    text-align: center;
+    color: $cor2;
+}
+p{
+    text-align: justify;
+    color: $cor1;
+}
+.botoes{
+    margin-bottom: 2%;
+    cursor: pointer;
+    background-color: $cor3;
+    border-radius: 20px;
+    &:hover{
+        background-color: $cor2;
+    }
+}
+

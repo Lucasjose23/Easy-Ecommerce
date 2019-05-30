@@ -1,0 +1,47 @@
+<!--
+  Generated template for the PageAdmCustomizarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sua loja</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h5>Deixe sua loja linda para os clientes.</h5>
+  <form (ngSubmit)="logForm()" class="form-cus">
+      <ion-item>
+        <ion-label>Nome:</ion-label>
+        <ion-input type="text"  name="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label >Descrição:</ion-label>
+   
+        <ion-textarea  class="textarea" name="description"></ion-textarea>
+      </ion-item>
+      <ion-item>
+          <ion-label>Cor de Fundo:</ion-label>
+          <ion-input type="color"  name="cor"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-thumbnail slot="start">
+                <ion-img src="../../assets/imgs/2511732_300x300 (1).jpg"></ion-img>
+            
+            </ion-thumbnail>
+          <div class="file-upload-wrapper" data-text="Sua Logo">
+           
+            <input name="file-upload-field" type="file" class="file-upload-field" [(ngModel)]="custom.logo" value="">
+          </div>
+          </ion-item>
+
+      <button ion-button round type="submit" class="botao-salvar" block>Salvar</button>
+    </form>
+ 
+
+</ion-content>

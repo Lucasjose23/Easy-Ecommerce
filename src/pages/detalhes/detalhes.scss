@@ -1,0 +1,43 @@
+$cor1: rgb(179, 179, 179);
+$cor3:#00cc99;
+$cor2:grey;
+$cor4:rgb(206, 3, 3);
+.principaldetalhe {
+    background: linear-gradient(to bottom, #cdd8e4, #d8dce0);
+    text-align: left!important;
+    
+}
+h4{
+    text-align: left!important;
+    font-size: 18px!important;
+}
+ul{
+    color: $cor1;
+    padding-left: 15px!important;
+    margin-top: 2px;
+}
+p{
+    color: $cor1!important;
+   
+}
+
+.btn-custom{
+    margin-top: 30px;
+    background: $cor3;
+    text-align: center;
+    width: 100%!important;
+    margin-left: auto;
+    margin: auto;
+}
+ion-card-title{
+    text-align: center!important;
+    color: $cor3!important;
+
+}
+.precod{
+    margin-left: 10px!important;
+    color: $cor4!important;
+    font-size: 24px!important;
+}
+
+

@@ -1,0 +1,67 @@
+$cor1: rgb(179, 179, 179);
+$cor3:#00cc99;
+$cor2:grey;
+$cor4:rgb(206, 3, 3);
+.principal {
+    background: linear-gradient(to bottom, #cdd8e4, #d8dce0);
+  
+    
+  
+}
+.logo{
+    /*background-image: url(../../assets/imgs/control.png);*/
+    background-size: cover;
+    background-position: center;
+}
+h1{
+    text-align: center;
+    color: $cor3;
+}
+p{
+    text-align: justify;
+    color: $cor1;
+}
+a{
+    color: $cor3;
+    text-decoration: none;
+
+}
+a:hover{
+    color: $cor2;
+}
+.btn-custom1{
+    background: #00cc99;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 3%;
+    margin-top: 10%;
+    
+}
+
+#card{
+    border-radius: 10px;
+    width: 100%!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.selecte{
+    border-radius: 10px;
+    width: 100%;
+    /* margin-bottom: auto; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.preco{
+    margin-left:95px!important;
+    margin-top: 10%!important;
+    color: $cor4!important;
+    font-size: 24px!important;
+  
+}
+#cardd{
+    width: 100%!important;
+    margin-left: auto;
+    margin-right: auto;
+
+}

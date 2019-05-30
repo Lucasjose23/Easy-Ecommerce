@@ -1,0 +1,15 @@
+$cor1: rgb(179, 179, 179);
+$cor2:grey;
+$cor3:#00cc99;
+$cor4:#d8dce0;
+h5{
+    color: $cor2;
+    text-align: center;
+
+}
+.botao{
+    background-color: $cor3;
+    &:hover{
+        background-color: $cor2;
+    }
+}

@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title style="margin-left:50px; margin-top:-30px; position:absolute">
+      Home
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="principal" padding>
+  <ion-menu [content]="content" side="left" type="overlay">
+    <ion-content>
+      <ion-list>
+        <button ion-item (click)="openPage2()">
+          Login Cliente
+        </button>
+        <button ion-item (click)="openPage3()">
+          Cadastro Cliente
+        </button>
+        <button ion-item (click)="openPage4()">
+          Administrador
+        </button>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+
+  <img class="logo" src="../../assets/imgs/TDZ-profile-image-300x300.png" alt="Logo">
+  <h1>TDZ restaurantes</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus tincidunt tellus, a convallis nunc
+    lobortis
+    vel <a href="">Saiba mais</a> </p>
+
+  <ion-item class="selecte">
+    <ion-label>Categoria</ion-label>
+    <ion-select>
+      <ion-option value="nes">Comida</ion-option>
+      <ion-option value="n64">Roupa</ion-option>
+      <ion-option value="ps">Eletronico</ion-option>
+      <ion-option value="genesis">Madeira</ion-option>
+
+    </ion-select>
+  </ion-item>
+
+  <ion-card style="opacity:0.85;" full id="card">
+    <ion-card-header>
+      Arroz
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img width="80" height="60" src="../assets/imgs/mini.jpg" style="position: absolute;"></ion-img>
+
+      <p style="margin-left:85px"> Arroz basico do restaurante TDZ</p>
+      <p  class="preco" ><strong> R$ 12,00</strong></p>
+    </ion-card-content>
+    <button ion-button round class="btn-custom1" full (click)="goDetalhes()">
+      Detalhes
+    </button>
+  </ion-card>
+
+  <ion-card style="opacity:0.85;" full id="card">
+    <ion-card-header>
+      Feijão
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img width="80" height="60" src="../assets/imgs/feijao.jpg" style="position: absolute;"></ion-img>
+
+      <p style="margin-left:85px"> Feijão basico do restaurante TDZ</p>
+      <p  class="preco" ><strong> R$ 12,00</strong></p>
+    </ion-card-content>
+    <button ion-button round class="btn-custom1" full (click)="goDetalhes()">
+      Detalhes
+    </button>
+  </ion-card>
+
+  <ion-card style="opacity:0.85;" full id="card">
+    <ion-card-header>
+      Carne
+    </ion-card-header>
+    <ion-card-content>
+      <ion-img width="80" height="60" src="../assets/imgs/carne.jpg" style="position: absolute;"></ion-img>
+
+      <p style="margin-left:85px"> Carne basica do restaurante TDZ</p>
+      <p  class="preco" ><strong> R$ 12,00</strong></p>
+    </ion-card-content>
+    <button ion-button round class="btn-custom1" full (click)="goDetalhes()">
+      Detalhes
+    </button>
+  </ion-card>
+
+  <!---tela de login, tela de cadastro -->
+
+
+</ion-content>
